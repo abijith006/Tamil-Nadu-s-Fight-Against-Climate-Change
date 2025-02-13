@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action</title>
+    <style>
+        /* General Section Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styling */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        header.scrolled {
+            background-color: #1a252f;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #3498db;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Section Styling */
+        section {
+            background: #fff;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #3498db;
+            font-size: 2rem;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Boxed Content Areas */
+        .stats, .solutions, .resources, .definition, .effects {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats h3, .solutions h3, .resources h3, .definition h3, .effects h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+        }
+
+        /* Statistics List */
+        .stats ul, .definition ul, .effects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .stats ul li, .definition ul li, .effects ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        /* Hero Image */
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Resources Section */
+        .resources ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .resources ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .resources ul li a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .resources ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Popup Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #bbb;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <h1>Climate Action</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#what-is-climate-change">About</a></li>
+                <li><a href="#additional-content">Resources</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="climate-action">
+        <h2>Climate Action: A Call to Protect Our Planet</h2>
+        <p>Climate change is one of the most urgent global challenges. <a href="https://www.un.org/sustainabledevelopment/climate-change/" target="_blank">SDG Goal 13</a> focuses on taking immediate action to combat climate change and its devastating impacts. Without action, the world will continue to experience extreme weather conditions, rising sea levels, and widespread environmental degradation.</p>
+        
+        <div class="stats">
+            <h3>Key Statistics</h3>
+            <ul>
+                <li><strong>Global Temperature Rise:</strong> The Earth's average temperature has risen by 1.1°C since pre-industrial times. (<a href="https://climate.nasa.gov/" target="_blank">NASA Climate Change</a>)</li>
+                <li><strong>Carbon Emissions:</strong> CO2 levels are at their highest in 800,000 years, contributing to global warming.</li>
+                <li><strong>Extreme Weather Events:</strong> Climate-related disasters have surged by 83% in the past two decades. (<a href="https://www.ipcc.ch/" target="_blank">IPCC Report</a>)</li>
+            </ul>
+        </div>
+        
+        <div class="hero-image">
+            <img src="images\39e6a1_dd9a3a857c4a42928ecf65c7615b15d5~mv2.png" alt="Global Temperature Rise" onclick="openModal(this)">
+        </div>
+        
+        <div class="solutions">
+            <h3>How Can We Help?</h3>
+            <p>Addressing climate change requires joint efforts from individuals, governments, and industries. Steps like reducing carbon footprints, promoting renewable energy, and adopting sustainable practices can make a significant impact.</p>
+        </div>
+    </section>
+
+    <section id="what-is-climate-change">
+        <h2>What is Climate Change?</h2>
+        <p>Climate change refers to long-term shifts in global temperatures and weather patterns. While some of these changes are natural, human activities, particularly the burning of fossil fuels, deforestation, and industrial pollution, are accelerating climate change at an alarming rate. (<a href="https://www.un.org/en/climatechange/what-is-climate-change" target="_blank">United Nations</a>)</p>
+      
+        <div class="definition">
+            <h3>Definition & Causes</h3>
+            <p>Climate change occurs due to an increase in greenhouse gases, such as CO₂ and methane, which trap heat in the Earth's atmosphere. Major contributors include:</p>
+            <ul>
+                <li><strong>Greenhouse Gases:</strong> Carbon dioxide, methane, and nitrous oxide contribute to global warming. (<a href="https://climate.nasa.gov/causes/" target="_blank">NASA - Causes of Climate Change</a>)</li>
+                <li><strong>Deforestation:</strong> Large-scale forest clearing reduces the planet's ability to absorb carbon dioxide.</li>
+                <li><strong>Industrial Pollution:</strong> Factories, power plants, and vehicles release harmful emissions into the atmosphere. (<a href="https://www.epa.gov/climate-change-science" target="_blank">EPA - Climate Change Science</a>)</li>
+            </ul>
+        </div>
+      
+        <div class="effects">
+            <h3>Effects of Climate Change</h3>
+            <ul>
+                <li><strong>Rising Temperatures:</strong> The Earth’s temperature has risen significantly due to global warming.</li>
+                <li><strong>Sea-Level Rise:</strong> Melting glaciers and polar ice caps are causing sea levels to increase.</li>
+                <li><strong>Biodiversity Loss:</strong> Many species are struggling to adapt to changing environments.</li>
+                <li><strong>Extreme Weather:</strong> Hurricanes, wildfires, and droughts are becoming more frequent and severe.</li>
+            </ul>
+        </div>
+
+        <div class="hero-image">
+            <img src="images\360_F_578310112_4utIeruSQwXjyzznvfTuVN6ohHkhfGEU.jpg" alt="Glacier Mass Balance" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <section id="additional-content">
+        <h2>Additional Content</h2>
+        <p>Here are some additional images and information related to climate change:</p>
+        
+        <div class="hero-image">
+            <img src="images\arctic-sea-ice-melt-thinckess-over-decades-comparison.png" alt="Arctic Sea Ice Minimum Comparison" onclick="openModal(this)">
+        </div>
+
+        <div class="hero-image">
+            <img src="images\41597_2018_Article_BFsdata2017201_Fig3_HTML.jpg" alt="Global Carbon Emission by Type" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 Climate Action. All rights reserved. | <a href="https://www.un.org/sustainabledevelopment/climate-change/" target="_blank">Learn More About SDG Goal 13</a></p>
+    </footer>
+
+    <script>
+        // Function to open the modal and display the clicked image
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        // Add scroll effect to header
+        window.addEventListener("scroll", function() {
+            const header = document.getElementById("mainHeader");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+</body>
+</html>
